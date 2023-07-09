@@ -1,0 +1,43 @@
+.navbar{
+    border: 5px solid rgb(199, 113, 32);
+    background-color: black;
+    text-transform: capitalize;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    height: 50px;
+}
+.title{
+    text-transform: none;
+    color: orange;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.search-btn{
+    color: white;
+    background-color: #f08804;
+}
+
+.outer{
+    border: 1rem solid rgb(199, 113, 32);
+    height: 30em;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.inner{
+    border: .5rem solid rgb(32, 199, 99);
+    width: 50%;
+    height: 50%;
+    align-self:center; /* has higher priority */
+}
+@media (max-width: 600px){
+    .outer{
+        background-color: red;
+    }
+}

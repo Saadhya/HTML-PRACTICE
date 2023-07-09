@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practice set 7 and 8</title>
+        <style>
+            .wrapper {
+                border: 5px solid blueviolet;
+                color: white;
+                background-color: blue;
+            }
+
+            @media (max-width: 300px) {
+                .wrapper {
+                    background-color: green;
+                }
+            }
+
+            @media (min-width: 300px) and (max-width: 400px) {
+                .wrapper {
+                    background-color: pink;
+                }
+            }
+
+            @media (min-width: 400px) and (max-width: 600px) {
+                .wrapper {
+                    background-color: red;
+                }
+            }
+
+            .trans {
+                height: 200px;
+                width: 200px;
+                color: #25344a;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                border: 10px solid;
+                border-color: #25344a transparent;
+                border-radius: 50%;
+                animation: spin 2s ease-in infinite;
+                /* background-color: blue; */
+            }
+
+            @keyframes spin {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+            .video-controls{
+                font-size: 2rem;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>
+            Media query
+        </h1>
+        <div class="wrapper">
+            <h1>Radhe krishna</h1>
+        </div>
+
+        <!--  transition-->
+        <h1>
+            Media query and Transition
+        </h1>
+        <div class="">
+            <p>rotate in degree</p>
+            <p>skew in degree</p>
+            <p>translate axis wise</p>
+            <p>scale axis wise</p>
+            <div class="trans">
+            </div>
+        </div>
+        
+        <iframe src="link"> Link </option></iframe>
+        <h1>
+            Video Attributes
+        </h1>    
+        <!-- <video src="http://techslides.com/demos/sample-videos/small.mp4"> My Video </video> -->
+        <video controls> 
+            <source src=http://techslides.com/demos/sample-videos/small.webm type=video/webm> 
+            <source src=http://techslides.com/demos/sample-videos/small.ogv type=video/ogg> 
+            <source src=http://techslides.com/demos/sample-videos/small.mp4 type=video/mp4>
+            <source src=http://techslides.com/demos/sample-videos/small.3gp type=video/3gp>
+          </video>
+
+            <div class="video-controls">
+                Attributes
+                - controls
+                - height
+                - width
+                - loop
+                - autoplay
+            </div>
+    </body>
+
+</html>
